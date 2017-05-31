@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #FBDA31;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+section {
+  max-width: 760px;
+  background-color: #ffffff;
+  padding: 2rem 0;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0 10px;
+}
+
+legend {
+  width: 100%;
+  text-align:center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.radio {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.info-field {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+.info-field label {
+  margin: 5px 0;
+}
+
+.info-field input {
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.profile label {
+  margin-bottom: 15px;
+}
+
+input[type="file"]{
+  font-size: 16px;
+}
+
+.button {
+  width: 48%;
+  text-align: center;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .information {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .button {
+    align-self: center;
+    margin-top: 30px;
+  }
+
+  input[type="file"] {
+    font-size: 14px;
+  }
+
+  section {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .info-field {
+    width: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Profile Setup</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <meta name="viewport" content="width=device-width" initial-scale="1" >
+</head>
+<body>
+  <div class="outer">
+    <section>
+      <form>
+        <fieldset>
+          <legend>Sign Up</legend>
+          <div class="radio">
+            <label for="admin">
+            <input type="radio" name="account-type" id="admin" value="admin"> admin</label>
+            <label for="personal">
+            <input type="radio" name="account-type" id="personal" value="personal" checked> personal</label>
+            <label for="guest">
+            <input type="radio" name="account-type" id="guest" value="guest"> guest</label>
+          </div>
+
+          <div class="information">
+            <div class="info-field">
+            <label for="name">name</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="info-field">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="info-field">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="info-field">
+            <label for="confirm-password">confirm password</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+          </div>
+
+          </div>
+          <div class="footer">
+          <div class="profile">
+          <label for="profile-picture">profile picture</label>
+          <input type="file" name="profile-picture" id="profile-picture" value="profile-picture">
+        </div>
+        <input class="button" type="button" name="sign up" value="sign up">
+      </div>
+        </fieldset>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
